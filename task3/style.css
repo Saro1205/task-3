@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #0395f0, #ebe9e7);
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 40px auto;
+  position: relative;
+ 
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f8f4f4;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 14px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.nav:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dots {
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #333;
+}
+
+@media (max-width: 600px) {
+  .caption {
+    font-size: 0.8rem;
+  }
+}

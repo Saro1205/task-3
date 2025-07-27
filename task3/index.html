@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Image Carousel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="carousel-container">
+  <div class="carousel" id="carousel">
+
+    <div class="carousel-track">
+      <div class="slide">
+        <img src="https://picsum.photos/id/1015/800/400" alt="Nature" />
+        <div class="caption">Mountain View</div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/id/1016/800/400" alt="Beach" />
+        <div class="caption">Serene Beach</div>
+      </div>
+      <div class="slide">
+        <img src="https://picsum.photos/id/1020/800/400" alt="Forest" />
+        <div class="caption">Foggy Forest</div>
+      </div>
+    </div>
+
+    <button class="nav prev" onclick="changeSlide(-1)">❮</button>
+    <button class="nav next" onclick="changeSlide(1)">❯</button>
+
+    <div class="dots">
+      <span class="dot" onclick="setSlide(0)"></span>
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

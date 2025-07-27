@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Joke Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>😂 Joke Generator</h1>
+
+    <div class="controls">
+      <label for="category">Choose Category:</label>
+      <select id="category">
+        <option value="Any">Any</option>
+        <option value="Programming">Programming</option>
+        <option value="Misc">Misc</option>
+        <option value="Pun">Pun</option>
+        <option value="Spooky">Spooky</option>
+        <option value="Dark">Dark</option>
+      </select>
+    </div>
+
+    <div class="joke-box">
+      <p id="joke-text">Click the button to get a joke 😄</p>
+    </div>
+
+    <button onclick="getJoke()">Get Joke</button>
+
+    <div id="loader" class="hidden">Loading...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
